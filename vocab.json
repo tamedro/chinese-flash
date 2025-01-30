@@ -1,0 +1,1414 @@
+{
+  "vocab": [
+    {
+      "library": "hsk1",
+      "character": "爱",
+      "handwritten": [
+        "https://example.com/handwritten/ai4.png"
+      ],
+      "pinyin": "ài",
+      "definition": "to love"
+    },
+    {
+      "library": "hsk1",
+      "character": "八",
+      "handwritten": [
+        "https://example.com/handwritten/ba1.png"
+      ],
+      "pinyin": "bā",
+      "definition": "eight"
+    },
+    {
+      "library": "hsk1",
+      "character": "爸爸",
+      "handwritten": [
+        "https://example.com/handwritten/ba4.png",
+        "https://example.com/handwritten/ba5.png"
+      ],
+      "pinyin": "bà ba",
+      "definition": "dad"
+    },
+    {
+      "library": "hsk1",
+      "character": "杯子",
+      "handwritten": [
+        "https://example.com/handwritten/bei1.png",
+        "https://example.com/handwritten/zi5.png"
+      ],
+      "pinyin": "bēi zi",
+      "definition": "cup"
+    },
+    {
+      "library": "hsk1",
+      "character": "北京",
+      "handwritten": [
+        "https://example.com/handwritten/bei3.png",
+        "https://example.com/handwritten/jing1.png"
+      ],
+      "pinyin": "Běi jīng",
+      "definition": "Beijing"
+    },
+    {
+      "library": "hsk1",
+      "character": "本",
+      "handwritten": [
+        "https://example.com/handwritten/ben3.png"
+      ],
+      "pinyin": "běn",
+      "definition": "measure word for books"
+    },
+    {
+      "library": "hsk1",
+      "character": "不",
+      "handwritten": [
+        "https://example.com/handwritten/bu4.png"
+      ],
+      "pinyin": "bù",
+      "definition": "not"
+    },
+    {
+      "library": "hsk1",
+      "character": "不客气",
+      "handwritten": [
+        "https://example.com/handwritten/bu4.png",
+        "https://example.com/handwritten/ke4.png",
+        "https://example.com/handwritten/qi5.png"
+      ],
+      "pinyin": "bù kè qi",
+      "definition": "you're welcome"
+    },
+    {
+      "library": "hsk1",
+      "character": "菜",
+      "handwritten": [
+        "https://example.com/handwritten/cai4.png"
+      ],
+      "pinyin": "cài",
+      "definition": "vegetable"
+    },
+    {
+      "library": "hsk1",
+      "character": "茶",
+      "handwritten": [
+        "https://example.com/handwritten/cha2.png"
+      ],
+      "pinyin": "chá",
+      "definition": "tea"
+    },
+    {
+      "library": "hsk1",
+      "character": "吃",
+      "handwritten": [
+        "https://example.com/handwritten/chi1.png"
+      ],
+      "pinyin": "chī",
+      "definition": "to eat"
+    },
+    {
+      "library": "hsk1",
+      "character": "出租车",
+      "handwritten": [
+        "https://example.com/handwritten/chu1.png",
+        "https://example.com/handwritten/zu1.png",
+        "https://example.com/handwritten/che1.png"
+      ],
+      "pinyin": "chū zū chē",
+      "definition": "taxi"
+    },
+    {
+      "library": "hsk1",
+      "character": "打电话",
+      "handwritten": [
+        "https://example.com/handwritten/da3.png",
+        "https://example.com/handwritten/dian4.png",
+        "https://example.com/handwritten/hua4.png"
+      ],
+      "pinyin": "dǎ diàn huà",
+      "definition": "to make a phone call"
+    },
+    {
+      "library": "hsk1",
+      "character": "大",
+      "handwritten": [
+        "https://example.com/handwritten/da4.png"
+      ],
+      "pinyin": "dà",
+      "definition": "big"
+    },
+    {
+      "library": "hsk1",
+      "character": "的",
+      "handwritten": [
+        "https://example.com/handwritten/de5.png"
+      ],
+      "pinyin": "de",
+      "definition": "possessive particle"
+    },
+    {
+      "library": "hsk1",
+      "character": "点",
+      "handwritten": [
+        "https://example.com/handwritten/dian3.png"
+      ],
+      "pinyin": "diǎn",
+      "definition": "o'clock"
+    },
+    {
+      "library": "hsk1",
+      "character": "电脑",
+      "handwritten": [
+        "https://example.com/handwritten/dian4.png",
+        "https://example.com/handwritten/nao3.png"
+      ],
+      "pinyin": "diàn nǎo",
+      "definition": "computer"
+    },
+    {
+      "library": "hsk1",
+      "character": "电视",
+      "handwritten": [
+        "https://example.com/handwritten/dian4.png",
+        "https://example.com/handwritten/shi4.png"
+      ],
+      "pinyin": "diàn shì",
+      "definition": "TV"
+    },
+    {
+      "library": "hsk1",
+      "character": "电影",
+      "handwritten": [
+        "https://example.com/handwritten/dian4.png",
+        "https://example.com/handwritten/ying3.png"
+      ],
+      "pinyin": "diàn yǐng",
+      "definition": "movie"
+    },
+    {
+      "library": "hsk1",
+      "character": "东西",
+      "handwritten": [
+        "https://example.com/handwritten/dong1.png",
+        "https://example.com/handwritten/xi5.png"
+      ],
+      "pinyin": "dōng xi",
+      "definition": "thing"
+    },
+    {
+      "library": "hsk1",
+      "character": "都",
+      "handwritten": [
+        "https://example.com/handwritten/dou1.png"
+      ],
+      "pinyin": "dōu",
+      "definition": "all"
+    },
+    {
+      "library": "hsk1",
+      "character": "读",
+      "handwritten": [
+        "https://example.com/handwritten/du2.png"
+      ],
+      "pinyin": "dú",
+      "definition": "to read"
+    },
+    {
+      "library": "hsk1",
+      "character": "对不起",
+      "handwritten": [
+        "https://example.com/handwritten/dui4.png",
+        "https://example.com/handwritten/bu4.png",
+        "https://example.com/handwritten/qi3.png"
+      ],
+      "pinyin": "duì bu qǐ",
+      "definition": "sorry"
+    },
+    {
+      "library": "hsk1",
+      "character": "多",
+      "handwritten": [
+        "https://example.com/handwritten/duo1.png"
+      ],
+      "pinyin": "duō",
+      "definition": "many"
+    },
+    {
+      "library": "hsk1",
+      "character": "多少",
+      "handwritten": [
+        "https://example.com/handwritten/duo1.png",
+        "https://example.com/handwritten/shao3.png"
+      ],
+      "pinyin": "duō shǎo",
+      "definition": "how much/many"
+    },
+    {
+      "library": "hsk1",
+      "character": "儿子",
+      "handwritten": [
+        "https://example.com/handwritten/er2.png",
+        "https://example.com/handwritten/zi5.png"
+      ],
+      "pinyin": "ér zi",
+      "definition": "son"
+    },
+    {
+      "library": "hsk1",
+      "character": "二",
+      "handwritten": [
+        "https://example.com/handwritten/er4.png"
+      ],
+      "pinyin": "èr",
+      "definition": "two"
+    },
+    {
+      "library": "hsk1",
+      "character": "饭店",
+      "handwritten": [
+        "https://example.com/handwritten/fan4.png",
+        "https://example.com/handwritten/dian4.png"
+      ],
+      "pinyin": "fàn diàn",
+      "definition": "restaurant"
+    },
+    {
+      "library": "hsk1",
+      "character": "飞机",
+      "handwritten": [
+        "https://example.com/handwritten/fei1.png",
+        "https://example.com/handwritten/ji1.png"
+      ],
+      "pinyin": "fēi jī",
+      "definition": "airplane"
+    },
+    {
+      "library": "hsk1",
+      "character": "分钟",
+      "handwritten": [
+        "https://example.com/handwritten/fen1.png",
+        "https://example.com/handwritten/zhong1.png"
+      ],
+      "pinyin": "fēn zhōng",
+      "definition": "minute"
+    },
+    {
+      "library": "hsk1",
+      "character": "高兴",
+      "handwritten": [
+        "https://example.com/handwritten/gao1.png",
+        "https://example.com/handwritten/xing4.png"
+      ],
+      "pinyin": "gāo xìng",
+      "definition": "happy"
+    },
+    {
+      "library": "hsk1",
+      "character": "个",
+      "handwritten": [
+        "https://example.com/handwritten/ge4.png"
+      ],
+      "pinyin": "gè",
+      "definition": "measure word"
+    },
+    {
+      "library": "hsk1",
+      "character": "工作",
+      "handwritten": [
+        "https://example.com/handwritten/gong1.png",
+        "https://example.com/handwritten/zuo4.png"
+      ],
+      "pinyin": "gōng zuò",
+      "definition": "work"
+    },
+    {
+      "library": "hsk1",
+      "character": "狗",
+      "handwritten": [
+        "https://example.com/handwritten/gou3.png"
+      ],
+      "pinyin": "gǒu",
+      "definition": "dog"
+    },
+    {
+      "library": "hsk1",
+      "character": "汉语",
+      "handwritten": [
+        "https://example.com/handwritten/han4.png",
+        "https://example.com/handwritten/yu3.png"
+      ],
+      "pinyin": "Hàn yǔ",
+      "definition": "Chinese language"
+    },
+    {
+      "library": "hsk1",
+      "character": "好",
+      "handwritten": [
+        "https://example.com/handwritten/hao3.png"
+      ],
+      "pinyin": "hǎo",
+      "definition": "good"
+    },
+    {
+      "library": "hsk1",
+      "character": "号",
+      "handwritten": [
+        "https://example.com/handwritten/hao4.png"
+      ],
+      "pinyin": "hào",
+      "definition": "number"
+    },
+    {
+      "library": "hsk1",
+      "character": "喝",
+      "handwritten": [
+        "https://example.com/handwritten/he1.png"
+      ],
+      "pinyin": "hē",
+      "definition": "to drink"
+    },
+    {
+      "library": "hsk1",
+      "character": "和",
+      "handwritten": [
+        "https://example.com/handwritten/he2.png"
+      ],
+      "pinyin": "hé",
+      "definition": "and"
+    },
+    {
+      "library": "hsk1",
+      "character": "很",
+      "handwritten": [
+        "https://example.com/handwritten/hen3.png"
+      ],
+      "pinyin": "hěn",
+      "definition": "very"
+    },
+    {
+      "library": "hsk1",
+      "character": "后面",
+      "handwritten": [
+        "https://example.com/handwritten/hou4.png",
+        "https://example.com/handwritten/mian4.png"
+      ],
+      "pinyin": "hòu miàn",
+      "definition": "behind"
+    },
+    {
+      "library": "hsk1",
+      "character": "回",
+      "handwritten": [
+        "https://example.com/handwritten/hui2.png"
+      ],
+      "pinyin": "huí",
+      "definition": "to return"
+    },
+    {
+      "library": "hsk1",
+      "character": "会",
+      "handwritten": [
+        "https://example.com/handwritten/hui4.png"
+      ],
+      "pinyin": "huì",
+      "definition": "can"
+    },
+    {
+      "library": "hsk1",
+      "character": "几",
+      "handwritten": [
+        "https://example.com/handwritten/ji3.png"
+      ],
+      "pinyin": "jǐ",
+      "definition": "how many"
+    },
+    {
+      "library": "hsk1",
+      "character": "家",
+      "handwritten": [
+        "https://example.com/handwritten/jia1.png"
+      ],
+      "pinyin": "jiā",
+      "definition": "home"
+    },
+    {
+      "library": "hsk1",
+      "character": "叫",
+      "handwritten": [
+        "https://example.com/handwritten/jiao4.png"
+      ],
+      "pinyin": "jiào",
+      "definition": "to call"
+    },
+    {
+      "library": "hsk1",
+      "character": "今天",
+      "handwritten": [
+        "https://example.com/handwritten/jin1.png",
+        "https://example.com/handwritten/tian1.png"
+      ],
+      "pinyin": "jīn tiān",
+      "definition": "today"
+    },
+    {
+      "library": "hsk1",
+      "character": "九",
+      "handwritten": [
+        "https://example.com/handwritten/jiu3.png"
+      ],
+      "pinyin": "jiǔ",
+      "definition": "nine"
+    },
+    {
+      "library": "hsk1",
+      "character": "开",
+      "handwritten": [
+        "https://example.com/handwritten/kai1.png"
+      ],
+      "pinyin": "kāi",
+      "definition": "to open"
+    },
+    {
+      "library": "hsk1",
+      "character": "看",
+      "handwritten": [
+        "https://example.com/handwritten/kan4.png"
+      ],
+      "pinyin": "kàn",
+      "definition": "to look"
+    },
+    {
+      "library": "hsk1",
+      "character": "看见",
+      "handwritten": [
+        "https://example.com/handwritten/kan4.png",
+        "https://example.com/handwritten/jian4.png"
+      ],
+      "pinyin": "kàn jiàn",
+      "definition": "to see"
+    },
+    {
+      "library": "hsk1",
+      "character": "块",
+      "handwritten": [
+        "https://example.com/handwritten/kuai4.png"
+      ],
+      "pinyin": "kuài",
+      "definition": "piece"
+    },
+    {
+      "library": "hsk1",
+      "character": "来",
+      "handwritten": [
+        "https://example.com/handwritten/lai2.png"
+      ],
+      "pinyin": "lái",
+      "definition": "to come"
+    },
+    {
+      "library": "hsk1",
+      "character": "老师",
+      "handwritten": [
+        "https://example.com/handwritten/lao3.png",
+        "https://example.com/handwritten/shi1.png"
+      ],
+      "pinyin": "lǎo shī",
+      "definition": "teacher"
+    },
+    {
+      "library": "hsk1",
+      "character": "了",
+      "handwritten": [
+        "https://example.com/handwritten/le5.png"
+      ],
+      "pinyin": "le",
+      "definition": "completed action marker"
+    },
+    {
+      "library": "hsk1",
+      "character": "冷",
+      "handwritten": [
+        "https://example.com/handwritten/leng3.png"
+      ],
+      "pinyin": "lěng",
+      "definition": "cold"
+    },
+    {
+      "library": "hsk1",
+      "character": "里",
+      "handwritten": [
+        "https://example.com/handwritten/li3.png"
+      ],
+      "pinyin": "lǐ",
+      "definition": "inside"
+    },
+    {
+      "library": "hsk1",
+      "character": "六",
+      "handwritten": [
+        "https://example.com/handwritten/liu4.png"
+      ],
+      "pinyin": "liù",
+      "definition": "six"
+    },
+    {
+      "library": "hsk1",
+      "character": "妈妈",
+      "handwritten": [
+        "https://example.com/handwritten/ma1.png",
+        "https://example.com/handwritten/ma5.png"
+      ],
+      "pinyin": "mā ma",
+      "definition": "mom"
+    },
+    {
+      "library": "hsk1",
+      "character": "吗",
+      "handwritten": [
+        "https://example.com/handwritten/ma5.png"
+      ],
+      "pinyin": "ma",
+      "definition": "question particle"
+    },
+    {
+      "library": "hsk1",
+      "character": "买",
+      "handwritten": [
+        "https://example.com/handwritten/mai3.png"
+      ],
+      "pinyin": "mǎi",
+      "definition": "to buy"
+    },
+    {
+      "library": "hsk1",
+      "character": "猫",
+      "handwritten": [
+        "https://example.com/handwritten/mao1.png"
+      ],
+      "pinyin": "māo",
+      "definition": "cat"
+    },
+    {
+      "library": "hsk1",
+      "character": "没",
+      "handwritten": [
+        "https://example.com/handwritten/mei2.png"
+      ],
+      "pinyin": "méi",
+      "definition": "not"
+    },
+    {
+      "library": "hsk1",
+      "character": "没关系",
+      "handwritten": [
+        "https://example.com/handwritten/mei2.png",
+        "https://example.com/handwritten/guan1.png",
+        "https://example.com/handwritten/xi5.png"
+      ],
+      "pinyin": "méi guān xi",
+      "definition": "it's okay"
+    },
+    {
+      "library": "hsk1",
+      "character": "米饭",
+      "handwritten": [
+        "https://example.com/handwritten/mi3.png",
+        "https://example.com/handwritten/fan4.png"
+      ],
+      "pinyin": "mǐ fàn",
+      "definition": "rice"
+    },
+    {
+      "library": "hsk1",
+      "character": "名字",
+      "handwritten": [
+        "https://example.com/handwritten/ming2.png",
+        "https://example.com/handwritten/zi5.png"
+      ],
+      "pinyin": "míng zi",
+      "definition": "name"
+    },
+    {
+      "library": "hsk1",
+      "character": "明天",
+      "handwritten": [
+        "https://example.com/handwritten/ming2.png",
+        "https://example.com/handwritten/tian1.png"
+      ],
+      "pinyin": "míng tiān",
+      "definition": "tomorrow"
+    },
+    {
+      "library": "hsk1",
+      "character": "哪",
+      "handwritten": [
+        "https://example.com/handwritten/na3.png"
+      ],
+      "pinyin": "nǎ",
+      "definition": "which"
+    },
+    {
+      "library": "hsk1",
+      "character": "哪儿",
+      "handwritten": [
+        "https://example.com/handwritten/na3.png",
+        "https://example.com/handwritten/er5.png"
+      ],
+      "pinyin": "nǎ er",
+      "definition": "where"
+    },
+    {
+      "library": "hsk1",
+      "character": "那",
+      "handwritten": [
+        "https://example.com/handwritten/na4.png"
+      ],
+      "pinyin": "nà",
+      "definition": "that"
+    },
+    {
+      "library": "hsk1",
+      "character": "呢",
+      "handwritten": [
+        "https://example.com/handwritten/ne5.png"
+      ],
+      "pinyin": "ne",
+      "definition": "question particle"
+    },
+    {
+      "library": "hsk1",
+      "character": "能",
+      "handwritten": [
+        "https://example.com/handwritten/neng2.png"
+      ],
+      "pinyin": "néng",
+      "definition": "can"
+    },
+    {
+      "library": "hsk1",
+      "character": "你",
+      "handwritten": [
+        "https://example.com/handwritten/ni3.png"
+      ],
+      "pinyin": "nǐ",
+      "definition": "you"
+    },
+    {
+      "library": "hsk1",
+      "character": "年",
+      "handwritten": [
+        "https://example.com/handwritten/nian2.png"
+      ],
+      "pinyin": "nián",
+      "definition": "year"
+    },
+    {
+      "library": "hsk1",
+      "character": "女儿",
+      "handwritten": [
+        "https://example.com/handwritten/nv3.png",
+        "https://example.com/handwritten/er5.png"
+      ],
+      "pinyin": "nǚ ér",
+      "definition": "daughter"
+    },
+    {
+      "library": "hsk1",
+      "character": "朋友",
+      "handwritten": [
+        "https://example.com/handwritten/peng2.png",
+        "https://example.com/handwritten/you3.png"
+      ],
+      "pinyin": "péng you",
+      "definition": "friend"
+    },
+    {
+      "library": "hsk1",
+      "character": "漂亮",
+      "handwritten": [
+        "https://example.com/handwritten/piao4.png",
+        "https://example.com/handwritten/liang5.png"
+      ],
+      "pinyin": "piào liang",
+      "definition": "pretty"
+    },
+    {
+      "library": "hsk1",
+      "character": "苹果",
+      "handwritten": [
+        "https://example.com/handwritten/ping2.png",
+        "https://example.com/handwritten/guo3.png"
+      ],
+      "pinyin": "píng guǒ",
+      "definition": "apple"
+    },
+    {
+      "library": "hsk1",
+      "character": "七",
+      "handwritten": [
+        "https://example.com/handwritten/qi1.png"
+      ],
+      "pinyin": "qī",
+      "definition": "seven"
+    },
+    {
+      "library": "hsk1",
+      "character": "钱",
+      "handwritten": [
+        "https://example.com/handwritten/qian2.png"
+      ],
+      "pinyin": "qián",
+      "definition": "money"
+    },
+    {
+      "library": "hsk1",
+      "character": "前面",
+      "handwritten": [
+        "https://example.com/handwritten/qian2.png",
+        "https://example.com/handwritten/mian4.png"
+      ],
+      "pinyin": "qián miàn",
+      "definition": "front"
+    },
+    {
+      "library": "hsk1",
+      "character": "请",
+      "handwritten": [
+        "https://example.com/handwritten/qing3.png"
+      ],
+      "pinyin": "qǐng",
+      "definition": "please"
+    },
+    {
+      "library": "hsk1",
+      "character": "去",
+      "handwritten": [
+        "https://example.com/handwritten/qu4.png"
+      ],
+      "pinyin": "qù",
+      "definition": "to go"
+    },
+    {
+      "library": "hsk1",
+      "character": "热",
+      "handwritten": [
+        "https://example.com/handwritten/re4.png"
+      ],
+      "pinyin": "rè",
+      "definition": "hot"
+    },
+    {
+      "library": "hsk1",
+      "character": "人",
+      "handwritten": [
+        "https://example.com/handwritten/ren2.png"
+      ],
+      "pinyin": "rén",
+      "definition": "person"
+    },
+    {
+      "library": "hsk1",
+      "character": "认识",
+      "handwritten": [
+        "https://example.com/handwritten/ren4.png",
+        "https://example.com/handwritten/shi5.png"
+      ],
+      "pinyin": "rèn shi",
+      "definition": "to know"
+    },
+    {
+      "library": "hsk1",
+      "character": "日",
+      "handwritten": [
+        "https://example.com/handwritten/ri4.png"
+      ],
+      "pinyin": "rì",
+      "definition": "day"
+    },
+    {
+      "library": "hsk1",
+      "character": "三",
+      "handwritten": [
+        "https://example.com/handwritten/san1.png"
+      ],
+      "pinyin": "sān",
+      "definition": "three"
+    },
+    {
+      "library": "hsk1",
+      "character": "商店",
+      "handwritten": [
+        "https://example.com/handwritten/shang1.png",
+        "https://example.com/handwritten/dian4.png"
+      ],
+      "pinyin": "shāng diàn",
+      "definition": "shop"
+    },
+    {
+      "library": "hsk1",
+      "character": "上",
+      "handwritten": [
+        "https://example.com/handwritten/shang4.png"
+      ],
+      "pinyin": "shàng",
+      "definition": "up"
+    },
+    {
+      "library": "hsk1",
+      "character": "上午",
+      "handwritten": [
+        "https://example.com/handwritten/shang4.png",
+        "https://example.com/handwritten/wu3.png"
+      ],
+      "pinyin": "shàng wǔ",
+      "definition": "morning"
+    },
+    {
+      "library": "hsk1",
+      "character": "少",
+      "handwritten": [
+        "https://example.com/handwritten/shao3.png"
+      ],
+      "pinyin": "shǎo",
+      "definition": "few"
+    },
+    {
+      "library": "hsk1",
+      "character": "谁",
+      "handwritten": [
+        "https://example.com/handwritten/shui2.png"
+      ],
+      "pinyin": "shéi",
+      "definition": "who"
+    },
+    {
+      "library": "hsk1",
+      "character": "什么",
+      "handwritten": [
+        "https://example.com/handwritten/shen2.png",
+        "https://example.com/handwritten/me5.png"
+      ],
+      "pinyin": "shén me",
+      "definition": "what"
+    },
+    {
+      "library": "hsk1",
+      "character": "十",
+      "handwritten": [
+        "https://example.com/handwritten/shi2.png"
+      ],
+      "pinyin": "shí",
+      "definition": "ten"
+    },
+    {
+      "library": "hsk1",
+      "character": "时候",
+      "handwritten": [
+        "https://example.com/handwritten/shi2.png",
+        "https://example.com/handwritten/hou4.png"
+      ],
+      "pinyin": "shí hou",
+      "definition": "time"
+    },
+    {
+      "library": "hsk1",
+      "character": "是",
+      "handwritten": [
+        "https://example.com/handwritten/shi4.png"
+      ],
+      "pinyin": "shì",
+      "definition": "to be"
+    },
+    {
+      "library": "hsk1",
+      "character": "书",
+      "handwritten": [
+        "https://example.com/handwritten/shu1.png"
+      ],
+      "pinyin": "shū",
+      "definition": "book"
+    },
+    {
+      "library": "hsk1",
+      "character": "水",
+      "handwritten": [
+        "https://example.com/handwritten/shui3.png"
+      ],
+      "pinyin": "shuǐ",
+      "definition": "water"
+    },
+    {
+      "library": "hsk1",
+      "character": "水果",
+      "handwritten": [
+        "https://example.com/handwritten/shui3.png",
+        "https://example.com/handwritten/guo3.png"
+      ],
+      "pinyin": "shuǐ guǒ",
+      "definition": "fruit"
+    },
+    {
+      "library": "hsk1",
+      "character": "睡觉",
+      "handwritten": [
+        "https://example.com/handwritten/shui4.png",
+        "https://example.com/handwritten/jiao4.png"
+      ],
+      "pinyin": "shuì jiào",
+      "definition": "to sleep"
+    },
+    {
+      "library": "hsk1",
+      "character": "说",
+      "handwritten": [
+        "https://example.com/handwritten/shuo1.png"
+      ],
+      "pinyin": "shuō",
+      "definition": "to speak"
+    },
+    {
+      "library": "hsk1",
+      "character": "四",
+      "handwritten": [
+        "https://example.com/handwritten/si4.png"
+      ],
+      "pinyin": "sì",
+      "definition": "four"
+    },
+    {
+      "library": "hsk1",
+      "character": "岁",
+      "handwritten": [
+        "https://example.com/handwritten/sui4.png"
+      ],
+      "pinyin": "suì",
+      "definition": "years old"
+    },
+    {
+      "library": "hsk1",
+      "character": "他",
+      "handwritten": [
+        "https://example.com/handwritten/ta1.png"
+      ],
+      "pinyin": "tā",
+      "definition": "he"
+    },
+    {
+      "library": "hsk1",
+      "character": "她",
+      "handwritten": [
+        "https://example.com/handwritten/ta1.png"
+      ],
+      "pinyin": "tā",
+      "definition": "she"
+    },
+    {
+      "library": "hsk1",
+      "character": "太",
+      "handwritten": [
+        "https://example.com/handwritten/tai4.png"
+      ],
+      "pinyin": "tài",
+      "definition": "too"
+    },
+    {
+      "library": "hsk1",
+      "character": "天气",
+      "handwritten": [
+        "https://example.com/handwritten/tian1.png",
+        "https://example.com/handwritten/qi4.png"
+      ],
+      "pinyin": "tiān qì",
+      "definition": "weather"
+    },
+    {
+      "library": "hsk1",
+      "character": "听",
+      "handwritten": [
+        "https://example.com/handwritten/ting1.png"
+      ],
+      "pinyin": "tīng",
+      "definition": "to listen"
+    },
+    {
+      "library": "hsk1",
+      "character": "同学",
+      "handwritten": [
+        "https://example.com/handwritten/tong2.png",
+        "https://example.com/handwritten/xue2.png"
+      ],
+      "pinyin": "tóng xué",
+      "definition": "classmate"
+    },
+    {
+      "library": "hsk1",
+      "character": "喂",
+      "handwritten": [
+        "https://example.com/handwritten/wei4.png"
+      ],
+      "pinyin": "wèi",
+      "definition": "hello (on the phone)"
+    },
+    {
+      "library": "hsk1",
+      "character": "我",
+      "handwritten": [
+        "https://example.com/handwritten/wo3.png"
+      ],
+      "pinyin": "wǒ",
+      "definition": "I"
+    },
+    {
+      "library": "hsk1",
+      "character": "我们",
+      "handwritten": [
+        "https://example.com/handwritten/wo3.png",
+        "https://example.com/handwritten/men5.png"
+      ],
+      "pinyin": "wǒ men",
+      "definition": "we"
+    },
+    {
+      "library": "hsk1",
+      "character": "五",
+      "handwritten": [
+        "https://example.com/handwritten/wu3.png"
+      ],
+      "pinyin": "wǔ",
+      "definition": "five"
+    },
+    {
+      "library": "hsk1",
+      "character": "喜欢",
+      "handwritten": [
+        "https://example.com/handwritten/xi3.png",
+        "https://example.com/handwritten/huan5.png"
+      ],
+      "pinyin": "xǐ huān",
+      "definition": "to like"
+    },
+    {
+      "library": "hsk1",
+      "character": "下",
+      "handwritten": [
+        "https://example.com/handwritten/xia4.png"
+      ],
+      "pinyin": "xià",
+      "definition": "down"
+    },
+    {
+      "library": "hsk1",
+      "character": "下午",
+      "handwritten": [
+        "https://example.com/handwritten/xia4.png",
+        "https://example.com/handwritten/wu3.png"
+      ],
+      "pinyin": "xià wǔ",
+      "definition": "afternoon"
+    },
+    {
+      "library": "hsk1",
+      "character": "下雨",
+      "handwritten": [
+        "https://example.com/handwritten/xia4.png",
+        "https://example.com/handwritten/yu3.png"
+      ],
+      "pinyin": "xià yǔ",
+      "definition": "to rain"
+    },
+    {
+      "library": "hsk1",
+      "character": "先生",
+      "handwritten": [
+        "https://example.com/handwritten/xian1.png",
+        "https://example.com/handwritten/sheng5.png"
+      ],
+      "pinyin": "xiān sheng",
+      "definition": "Mr."
+    },
+    {
+      "library": "hsk1",
+      "character": "现在",
+      "handwritten": [
+        "https://example.com/handwritten/xian4.png",
+        "https://example.com/handwritten/zai4.png"
+      ],
+      "pinyin": "xiàn zài",
+      "definition": "now"
+    },
+    {
+      "library": "hsk1",
+      "character": "想",
+      "handwritten": [
+        "https://example.com/handwritten/xiang3.png"
+      ],
+      "pinyin": "xiǎng",
+      "definition": "to want"
+    },
+    {
+      "library": "hsk1",
+      "character": "小",
+      "handwritten": [
+        "https://example.com/handwritten/xiao3.png"
+      ],
+      "pinyin": "xiǎo",
+      "definition": "small"
+    },
+    {
+      "library": "hsk1",
+      "character": "小姐",
+      "handwritten": [
+        "https://example.com/handwritten/xiao3.png",
+        "https://example.com/handwritten/jie5.png"
+      ],
+      "pinyin": "xiǎo jiě",
+      "definition": "Miss"
+    },
+    {
+      "library": "hsk1",
+      "character": "些",
+      "handwritten": [
+        "https://example.com/handwritten/xie1.png"
+      ],
+      "pinyin": "xiē",
+      "definition": "some"
+    },
+    {
+      "library": "hsk1",
+      "character": "写",
+      "handwritten": [
+        "https://example.com/handwritten/xie3.png"
+      ],
+      "pinyin": "xiě",
+      "definition": "to write"
+    },
+    {
+      "library": "hsk1",
+      "character": "谢谢",
+      "handwritten": [
+        "https://example.com/handwritten/xie4.png"
+      ],
+      "pinyin": "xiè xie",
+      "definition": "thank you"
+    },
+    {
+      "library": "hsk1",
+      "character": "星期",
+      "handwritten": [
+        "https://example.com/handwritten/xing1.png",
+        "https://example.com/handwritten/qi1.png"
+      ],
+      "pinyin": "xīng qī",
+      "definition": "week"
+    },
+    {
+      "library": "hsk1",
+      "character": "学生",
+      "handwritten": [
+        "https://example.com/handwritten/xue2.png",
+        "https://example.com/handwritten/sheng5.png"
+      ],
+      "pinyin": "xué sheng",
+      "definition": "student"
+    },
+    {
+      "library": "hsk1",
+      "character": "学习",
+      "handwritten": [
+        "https://example.com/handwritten/xue2.png",
+        "https://example.com/handwritten/xi2.png"
+      ],
+      "pinyin": "xué xí",
+      "definition": "to study"
+    },
+    {
+      "library": "hsk1",
+      "character": "学校",
+      "handwritten": [
+        "https://example.com/handwritten/xue2.png",
+        "https://example.com/handwritten/xiao4.png"
+      ],
+      "pinyin": "xué xiào",
+      "definition": "school"
+    },
+    {
+      "library": "hsk1",
+      "character": "一",
+      "handwritten": [
+        "https://example.com/handwritten/yi1.png"
+      ],
+      "pinyin": "yī",
+      "definition": "one"
+    },
+    {
+      "library": "hsk1",
+      "character": "衣服",
+      "handwritten": [
+        "https://example.com/handwritten/yi1.png",
+        "https://example.com/handwritten/fu2.png"
+      ],
+      "pinyin": "yī fu",
+      "definition": "clothes"
+    },
+    {
+      "library": "hsk1",
+      "character": "医生",
+      "handwritten": [
+        "https://example.com/handwritten/yi1.png",
+        "https://example.com/handwritten/sheng5.png"
+      ],
+      "pinyin": "yī shēng",
+      "definition": "doctor"
+    },
+    {
+      "library": "hsk1",
+      "character": "医院",
+      "handwritten": [
+        "https://example.com/handwritten/yi1.png",
+        "https://example.com/handwritten/yuan4.png"
+      ],
+      "pinyin": "yī yuàn",
+      "definition": "hospital"
+    },
+    {
+      "library": "hsk1",
+      "character": "椅子",
+      "handwritten": [
+        "https://example.com/handwritten/yi3.png",
+        "https://example.com/handwritten/zi5.png"
+      ],
+      "pinyin": "yǐ zi",
+      "definition": "chair"
+    },
+    {
+      "library": "hsk1",
+      "character": "有",
+      "handwritten": [
+        "https://example.com/handwritten/you3.png"
+      ],
+      "pinyin": "yǒu",
+      "definition": "to have"
+    },
+    {
+      "library": "hsk1",
+      "character": "月",
+      "handwritten": [
+        "https://example.com/handwritten/yue4.png"
+      ],
+      "pinyin": "yuè",
+      "definition": "month"
+    },
+    {
+      "library": "hsk1",
+      "character": "在",
+      "handwritten": [
+        "https://example.com/handwritten/zai4.png"
+      ],
+      "pinyin": "zài",
+      "definition": "at"
+    },
+    {
+      "library": "hsk1",
+      "character": "再见",
+      "handwritten": [
+        "https://example.com/handwritten/zai4.png",
+        "https://example.com/handwritten/jian4.png"
+      ],
+      "pinyin": "zài jiàn",
+      "definition": "goodbye"
+    },
+    {
+      "library": "hsk1",
+      "character": "怎么",
+      "handwritten": [
+        "https://example.com/handwritten/zen3.png",
+        "https://example.com/handwritten/me5.png"
+      ],
+      "pinyin": "zěn me",
+      "definition": "how"
+    },
+    {
+      "library": "hsk1",
+      "character": "这",
+      "handwritten": [
+        "https://example.com/handwritten/zhe4.png"
+      ],
+      "pinyin": "zhè",
+      "definition": "this"
+    },
+    {
+      "library": "hsk1",
+      "character": "中国",
+      "handwritten": [
+        "https://example.com/handwritten/zhong1.png",
+        "https://example.com/handwritten/guo2.png"
+      ],
+      "pinyin": "Zhōng guó",
+      "definition": "China"
+    },
+    {
+      "library": "hsk1",
+      "character": "中午",
+      "handwritten": [
+        "https://example.com/handwritten/zhong1.png",
+        "https://example.com/handwritten/wu3.png"
+      ],
+      "pinyin": "zhōng wǔ",
+      "definition": "noon"
+    },
+    {
+      "library": "hsk1",
+      "character": "住",
+      "handwritten": [
+        "https://example.com/handwritten/zhu4.png"
+      ],
+      "pinyin": "zhù",
+      "definition": "to live"
+    },
+    {
+      "library": "hsk1",
+      "character": "桌子",
+      "handwritten": [
+        "https://example.com/handwritten/zhuo1.png",
+        "https://example.com/handwritten/zi5.png"
+      ],
+      "pinyin": "zhuō zi",
+      "definition": "table"
+    },
+    {
+      "library": "hsk1",
+      "character": "字",
+      "handwritten": [
+        "https://example.com/handwritten/zi4.png"
+      ],
+      "pinyin": "zì",
+      "definition": "character"
+    },
+    {
+      "library": "hsk1",
+      "character": "昨天",
+      "handwritten": [
+        "https://example.com/handwritten/zuo2.png",
+        "https://example.com/handwritten/tian1.png"
+      ],
+      "pinyin": "zuó tiān",
+      "definition": "yesterday"
+    },
+    {
+      "library": "hsk1",
+      "character": "坐",
+      "handwritten": [
+        "https://example.com/handwritten/zuo4.png"
+      ],
+      "pinyin": "zuò",
+      "definition": "to sit"
+    },
+    {
+      "library": "hsk1",
+      "character": "做",
+      "handwritten": [
+        "https://example.com/handwritten/zuo4.png"
+      ],
+      "pinyin": "zuò",
+      "definition": "to do"
+    }
+  ]
+}

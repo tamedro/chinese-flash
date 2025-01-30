@@ -1,0 +1,167 @@
+/* Light mode (default) */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --controls-background: white;
+    --controls-shadow: rgba(0, 0, 0, 0.1);
+    --level-background: #f0f0f0;
+    --vocab-border: #ddd;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --controls-background: #1e1e1e;
+    --controls-shadow: rgba(255, 255, 255, 0.1);
+    --level-background: #333;
+    --vocab-border: #444;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 120px; /* Adjusted for header height */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px var(--controls-shadow);
+    z-index: 1000; /* Ensure header is above everything */
+    padding: 10px;
+}
+
+.header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.controls label {
+    margin-right: 15px;
+}
+
+.level {
+    margin-bottom: 30px;
+}
+
+.level h2 {
+    background-color: var(--level-background);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.vocab-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid var(--vocab-border);
+    border-radius: 5px;
+    position: relative;
+}
+
+.vocab-item.seen {
+    border-left: 5px solid #4CAF50; /* Green indicator for seen words */
+}
+
+.handwritten-img {
+    display: none;
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.theme-toggle {
+    margin-left: auto;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid var(--vocab-border);
+    border-radius: 5px;
+    background-color: var(--level-background);
+    color: var(--text-color);
+}
+
+.flashcard-container {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 120px; /* Position below the header */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--background-color);
+    padding: 40px;
+    border: 1px solid var(--vocab-border);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px var(--controls-shadow);
+    z-index: 1001;
+    width: 80%;
+    max-width: 800px;
+    height: 80vh;
+    max-height: calc(90vh - 120px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.flashcard-content {
+    flex: 1; /* Take up available space */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure content starts near the top */
+    padding-top: 40px; /* Added padding at the top */
+}
+
+.flashcard-content .character {
+    font-size: 8em; /* Increase size for better visibility */
+    font-weight: bold;
+    margin-bottom: 40px; /* Added more vertical padding */
+    display: block;
+}
+
+.flashcard-content .pinyin {
+    margin-bottom: 40px; /* Added vertical padding */
+}
+
+.flashcard-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px; /* Added horizontal padding */
+    position: absolute;
+    bottom: 20px; /* Pin to the bottom */
+    left: 0;
+}
+
+.flashcard-controls button {
+    padding: 10px 20px; /* Larger buttons */
+    border: 1px solid var(--vocab-border);
+    border-radius: 5px;
+    background-color: var(--level-background);
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 120px; /* Start below the header */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 120px); /* Adjusted to avoid overlapping */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Below header and flashcard */
+}
+
