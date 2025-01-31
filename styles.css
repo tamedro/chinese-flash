@@ -1,3 +1,11 @@
+/* Import Custom Font */
+@font-face {
+    font-family: 'LXGWWenKai';
+    src: url('https://tamedro.github.io/chinese-flash/fonts/LXGWWenKai-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Light mode (default) */
 :root {
     --background-color: white;
@@ -18,8 +26,9 @@
     --vocab-border: #444;
 }
 
+/* Apply font globally */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'LXGWWenKai', Arial, sans-serif;
     margin: 0;
     padding-top: 120px; /* Adjusted for header height */
     background-color: var(--background-color);
@@ -33,7 +42,7 @@ body {
     width: 100%;
     background-color: var(--background-color);
     box-shadow: 0 2px 5px var(--controls-shadow);
-    z-index: 1000; /* Ensure header is above everything */
+    z-index: 1000;
     padding: 10px;
 }
 
