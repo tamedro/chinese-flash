@@ -1,7 +1,7 @@
 /* Import Custom Font */
 @font-face {
     font-family: 'LXGWWenKai';
-    src: url('https://tamedro.github.io/chinese-flash/fonts/LXGWWenKai-Regular.ttf') format('truetype');
+    src: url('https://tamedro.github.io/chinese-flash/fonts/TTF/LXGWWenKai-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
