@@ -12,6 +12,7 @@
         .character.system-font {
             font-family: Arial, sans-serif;
             display: none;
+            font-size: 0.8em;
         }
     </style>
 </head>
@@ -75,8 +76,12 @@
             vocabDiv.classList.add('vocab-item');
 
             const characterDiv = document.createElement('div');
-            characterDiv.innerHTML = `<span class="label">Character:</span> <span class="character custom-font">${item.character}</span> <span class="character system-font">${item.character}</span>`;
+            characterDiv.innerHTML = `<span class="label">Character:</span> <span class="character custom-font">${item.character}</span>`;
             vocabDiv.appendChild(characterDiv);
+
+            const digitalDiv = document.createElement('div');
+            digitalDiv.innerHTML = `<span class="label">Digital:</span> <span class="character system-font">${item.character}</span>`;
+            vocabDiv.appendChild(digitalDiv);
 
             const pinyinDiv = document.createElement('div');
             pinyinDiv.innerHTML = `<span class="label">Pinyin:</span> <span class="pinyin">${item.pinyin}</span>`;
@@ -112,7 +117,7 @@
             el.style.display = showCharacters ? 'inline' : 'none';
         });
         document.querySelectorAll('.vocab-item .character.system-font').forEach(el => {
-            el.style.display = showCharacters && showSystemFont ? 'inline' : 'none';
+            el.style.display = showSystemFont ? 'inline' : 'none';
         });
         document.querySelectorAll('.vocab-item .pinyin').forEach(el => {
             el.style.display = showPinyin ? 'inline' : 'none';
@@ -129,9 +134,7 @@
 
         document.querySelector('.flashcard-content .character.custom-font').textContent = item.character;
         document.querySelector('.flashcard-content .character.system-font').textContent = item.character;
-        
         document.querySelector('.flashcard-content .character.system-font').style.display = document.getElementById('showSystemFont').checked ? 'inline' : 'none';
-        
         document.querySelector('.flashcard-content .pinyin').textContent = item.pinyin;
         document.querySelector('.flashcard-content .definition').textContent = item.definition;
 
@@ -141,26 +144,19 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById('showCharacters').addEventListener('change', updateVisibility);
-        document.getElementById('showPinyin').addEventListener('change', updateVisibility);
-        document.getElementById('showDefinitions').addEventListener('change', updateVisibility);
         document.getElementById('showSystemFont').addEventListener('change', updateVisibility);
-
         document.getElementById('startFlashcards').addEventListener('click', function () {
             currentIndex = 0;
             showFlashcard(currentIndex);
         });
-
         document.getElementById('stopFlashcards').addEventListener('click', function () {
             document.getElementById('flashcardContainer').style.display = 'none';
             document.getElementById('overlay').style.display = 'none';
         });
-
         document.getElementById('nextCard').addEventListener('click', function () {
             currentIndex = (currentIndex + 1) % vocabItems.length;
             showFlashcard(currentIndex);
         });
-
         loadVocab();
     });
 </script>
