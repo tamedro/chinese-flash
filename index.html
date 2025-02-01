@@ -90,6 +90,18 @@
         });
     }
 
+    function createLevel(library) {
+        const levelDiv = document.createElement('div');
+        levelDiv.id = library;
+        levelDiv.classList.add('level');
+
+        const levelHeader = document.createElement('h2');
+        levelHeader.textContent = library.toUpperCase();
+        levelDiv.appendChild(levelHeader);
+
+        return levelDiv;
+    }
+
     function updateVisibility() {
         const showCharacters = document.getElementById('showCharacters').checked;
         const showPinyin = document.getElementById('showPinyin').checked;
