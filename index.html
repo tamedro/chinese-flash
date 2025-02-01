@@ -56,7 +56,11 @@
         const vocabContainer = document.getElementById('vocab-container');
 
         data.vocab.forEach(item => {
-            const levelDiv = document.querySelector(`#${item.library}`) || createLevel(item.library);
+            let levelDiv = document.querySelector(`#${item.library}`);
+            if (!levelDiv) {
+                levelDiv = createLevel(item.library);
+                vocabContainer.appendChild(levelDiv);
+            }
 
             const vocabDiv = document.createElement('div');
             vocabDiv.classList.add('vocab-item');
@@ -74,8 +78,19 @@
             vocabDiv.appendChild(definitionDiv);
 
             levelDiv.appendChild(vocabDiv);
-            vocabContainer.appendChild(levelDiv);
         });
+    }
+
+    function createLevel(library) {
+        const levelDiv = document.createElement('div');
+        levelDiv.id = library;
+        levelDiv.classList.add('level');
+
+        const levelHeader = document.createElement('h2');
+        levelHeader.textContent = library.toUpperCase();
+        levelDiv.appendChild(levelHeader);
+
+        return levelDiv;
     }
 
     function updateVisibility() {
@@ -114,31 +129,22 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-        const flashcardContainer = document.getElementById('flashcardContainer');
-        const overlay = document.getElementById('overlay');
-        const startFlashcardsButton = document.getElementById('startFlashcards');
-        const stopFlashcardsButton = document.getElementById('stopFlashcards');
-        const nextCardButton = document.getElementById('nextCard');
-
-        flashcardContainer.style.display = 'none';
-        overlay.style.display = 'none';
-
         document.getElementById('showCharacters').addEventListener('change', updateVisibility);
         document.getElementById('showPinyin').addEventListener('change', updateVisibility);
         document.getElementById('showDefinitions').addEventListener('change', updateVisibility);
         document.getElementById('showSystemFont').addEventListener('change', updateVisibility);
 
-        startFlashcardsButton.addEventListener('click', function () {
+        document.getElementById('startFlashcards').addEventListener('click', function () {
             currentIndex = 0;
             showFlashcard(currentIndex);
         });
 
-        stopFlashcardsButton.addEventListener('click', function () {
-            flashcardContainer.style.display = 'none';
-            overlay.style.display = 'none';
+        document.getElementById('stopFlashcards').addEventListener('click', function () {
+            document.getElementById('flashcardContainer').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
         });
 
-        nextCardButton.addEventListener('click', function () {
+        document.getElementById('nextCard').addEventListener('click', function () {
             currentIndex = (currentIndex + 1) % vocabItems.length;
             showFlashcard(currentIndex);
         });
