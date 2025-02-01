@@ -96,7 +96,7 @@ body {
 }
 
 .flashcard-container {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
     top: 120px;
     left: 50%;
@@ -112,7 +112,6 @@ body {
     height: 80vh;
     max-height: calc(90vh - 120px);
     overflow-y: auto;
-    display: flex;
     flex-direction: column;
 }
 
@@ -130,6 +129,11 @@ body {
     font-weight: bold;
     margin-bottom: 40px;
     display: block;
+}
+
+.flashcard-content .character.system-font {
+    font-size: 0.6em; /* Make it a bit smaller than the custom font */
+    display: none; /* Keep it hidden by default */
 }
 
 .flashcard-content .pinyin {
@@ -157,7 +161,7 @@ body {
 }
 
 .overlay {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
     top: 120px;
     left: 0;
@@ -165,4 +169,10 @@ body {
     height: calc(100% - 120px);
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
+}
+
+/* Update the system font size on the main page */
+.vocab-item .character.system-font {
+    font-size: 1em; /* Match the size of the custom font */
+    display: none; /* Keep it hidden by default */
 }

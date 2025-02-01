@@ -12,7 +12,6 @@
         .character.system-font {
             font-family: Arial, sans-serif;
             display: none;
-            font-size: 0.8em;
         }
     </style>
 </head>
@@ -144,8 +143,22 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', function () {
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                themeToggle.textContent = '☀️ Light Mode';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeToggle.textContent = '🌙 Dark Mode';
+            }
+        });
+
         document.getElementById('showSystemFont').addEventListener('change', updateVisibility);
         document.getElementById('startFlashcards').addEventListener('click', function () {
+            vocabItems = vocabItems.sort(() => Math.random() - 0.5);
             currentIndex = 0;
             showFlashcard(currentIndex);
         });
