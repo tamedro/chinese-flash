@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Chinese - HSK Vocabulary</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .character.custom-font {
+            font-family: 'LXGWWenKai', Arial, sans-serif;
+        }
+        .character.system-font {
+            font-family: Arial, sans-serif;
+            display: none;
+        }
+    </style>
 </head>
 <body data-theme="dark"> <!-- Start page with dark mode -->
 
@@ -81,18 +90,6 @@
         });
     }
 
-    function createLevel(library) {
-        const levelDiv = document.createElement('div');
-        levelDiv.id = library;
-        levelDiv.classList.add('level');
-
-        const levelHeader = document.createElement('h2');
-        levelHeader.textContent = library.toUpperCase();
-        levelDiv.appendChild(levelHeader);
-
-        return levelDiv;
-    }
-
     function updateVisibility() {
         const showCharacters = document.getElementById('showCharacters').checked;
         const showPinyin = document.getElementById('showPinyin').checked;
@@ -120,6 +117,9 @@
 
         document.querySelector('.flashcard-content .character.custom-font').textContent = item.character;
         document.querySelector('.flashcard-content .character.system-font').textContent = item.character;
+        
+        document.querySelector('.flashcard-content .character.system-font').style.display = document.getElementById('showSystemFont').checked ? 'inline' : 'none';
+        
         document.querySelector('.flashcard-content .pinyin').textContent = item.pinyin;
         document.querySelector('.flashcard-content .definition').textContent = item.definition;
 
