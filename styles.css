@@ -132,7 +132,7 @@ body {
 }
 
 .flashcard-content .character.system-font {
-    font-size: 0.6em; /* Make it a bit smaller than the custom font */
+    font-size: 2em; /* Increased size, but smaller than the custom font */
     display: none; /* Keep it hidden by default */
 }
 
