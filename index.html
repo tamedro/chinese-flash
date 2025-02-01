@@ -20,6 +20,9 @@
         <label>
             <input type="checkbox" id="showDefinitions" checked> Show Definitions
         </label>
+        <label>
+            <input type="checkbox" id="showSystemFont"> Show System Font
+        </label>
         <div class="theme-toggle" id="themeToggle">🌙 Dark Mode</div>
         <button id="startFlashcards">Start Flashcards</button>
     </div>
@@ -31,7 +34,8 @@
 <div class="overlay" id="overlay"></div>
 <div class="flashcard-container" id="flashcardContainer">
     <div class="flashcard-content">
-        <span class="character"></span>
+        <span class="character custom-font"></span>
+        <span class="character system-font"></span>
         <span class="pinyin"></span>
         <span class="definition"></span>
     </div>
@@ -58,7 +62,7 @@
             vocabDiv.classList.add('vocab-item');
 
             const characterDiv = document.createElement('div');
-            characterDiv.innerHTML = `<span class="label">Character:</span> <span class="character">${item.character}</span>`;
+            characterDiv.innerHTML = `<span class="label">Character:</span> <span class="character custom-font">${item.character}</span> <span class="character system-font">${item.character}</span>`;
             vocabDiv.appendChild(characterDiv);
 
             const pinyinDiv = document.createElement('div');
@@ -74,26 +78,17 @@
         });
     }
 
-    function createLevel(library) {
-        const levelDiv = document.createElement('div');
-        levelDiv.id = library;
-        levelDiv.classList.add('level');
-
-        const levelHeader = document.createElement('h2');
-        levelHeader.textContent = library.toUpperCase();
-        levelDiv.appendChild(levelHeader);
-
-        return levelDiv;
-    }
-
     function updateVisibility() {
         const showCharacters = document.getElementById('showCharacters').checked;
         const showPinyin = document.getElementById('showPinyin').checked;
         const showDefinitions = document.getElementById('showDefinitions').checked;
+        const showSystemFont = document.getElementById('showSystemFont').checked;
 
-        // Update main page visibility
-        document.querySelectorAll('.vocab-item .character').forEach(el => {
+        document.querySelectorAll('.vocab-item .character.custom-font').forEach(el => {
             el.style.display = showCharacters ? 'inline' : 'none';
+        });
+        document.querySelectorAll('.vocab-item .character.system-font').forEach(el => {
+            el.style.display = showCharacters && showSystemFont ? 'inline' : 'none';
         });
         document.querySelectorAll('.vocab-item .pinyin').forEach(el => {
             el.style.display = showPinyin ? 'inline' : 'none';
@@ -108,7 +103,8 @@
         const overlay = document.getElementById('overlay');
         const item = vocabItems[index];
 
-        document.querySelector('.flashcard-content .character').textContent = item.character;
+        document.querySelector('.flashcard-content .character.custom-font').textContent = item.character;
+        document.querySelector('.flashcard-content .character.system-font').textContent = item.character;
         document.querySelector('.flashcard-content .pinyin').textContent = item.pinyin;
         document.querySelector('.flashcard-content .definition').textContent = item.definition;
 
@@ -130,6 +126,7 @@
         document.getElementById('showCharacters').addEventListener('change', updateVisibility);
         document.getElementById('showPinyin').addEventListener('change', updateVisibility);
         document.getElementById('showDefinitions').addEventListener('change', updateVisibility);
+        document.getElementById('showSystemFont').addEventListener('change', updateVisibility);
 
         startFlashcardsButton.addEventListener('click', function () {
             currentIndex = 0;
