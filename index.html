@@ -41,7 +41,7 @@
 
 <!-- Flashcard Container -->
 <div class="overlay" id="overlay"></div>
-<div class="flashcard-container" id="flashcardContainer">
+<div class="flashcard-container" id="flashcardContainer" style="display: none;">
     <div class="flashcard-content">
         <span class="character custom-font"></span>
         <span class="character system-font"></span>
@@ -112,6 +112,7 @@
         const showDefinitions = document.getElementById('showDefinitions').checked;
         const showSystemFont = document.getElementById('showSystemFont').checked;
 
+        // Update visibility on the main page
         document.querySelectorAll('.vocab-item .character.custom-font').forEach(el => {
             el.style.display = showCharacters ? 'inline' : 'none';
         });
@@ -124,6 +125,25 @@
         document.querySelectorAll('.vocab-item .definition').forEach(el => {
             el.style.display = showDefinitions ? 'inline' : 'none';
         });
+
+        // Update visibility in the flashcard modal
+        const flashcardCharacterCustom = document.querySelector('.flashcard-content .character.custom-font');
+        const flashcardCharacterSystem = document.querySelector('.flashcard-content .character.system-font');
+        const flashcardPinyin = document.querySelector('.flashcard-content .pinyin');
+        const flashcardDefinition = document.querySelector('.flashcard-content .definition');
+
+        if (flashcardCharacterCustom) {
+            flashcardCharacterCustom.style.display = showCharacters ? 'inline' : 'none';
+        }
+        if (flashcardCharacterSystem) {
+            flashcardCharacterSystem.style.display = showSystemFont ? 'inline' : 'none';
+        }
+        if (flashcardPinyin) {
+            flashcardPinyin.style.display = showPinyin ? 'inline' : 'none';
+        }
+        if (flashcardDefinition) {
+            flashcardDefinition.style.display = showDefinitions ? 'inline' : 'none';
+        }
     }
 
     function showFlashcard(index) {
@@ -133,13 +153,12 @@
 
         document.querySelector('.flashcard-content .character.custom-font').textContent = item.character;
         document.querySelector('.flashcard-content .character.system-font').textContent = item.character;
-        document.querySelector('.flashcard-content .character.system-font').style.display = document.getElementById('showSystemFont').checked ? 'inline' : 'none';
         document.querySelector('.flashcard-content .pinyin').textContent = item.pinyin;
         document.querySelector('.flashcard-content .definition').textContent = item.definition;
 
         flashcardContainer.style.display = 'block';
         overlay.style.display = 'block';
-        updateVisibility();
+        updateVisibility(); // Ensure visibility is updated immediately
     }
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -156,20 +175,28 @@
             }
         });
 
+        // Add event listeners to checkboxes to update visibility immediately
+        document.getElementById('showCharacters').addEventListener('change', updateVisibility);
+        document.getElementById('showPinyin').addEventListener('change', updateVisibility);
+        document.getElementById('showDefinitions').addEventListener('change', updateVisibility);
         document.getElementById('showSystemFont').addEventListener('change', updateVisibility);
+
         document.getElementById('startFlashcards').addEventListener('click', function () {
             vocabItems = vocabItems.sort(() => Math.random() - 0.5);
             currentIndex = 0;
             showFlashcard(currentIndex);
         });
+
         document.getElementById('stopFlashcards').addEventListener('click', function () {
             document.getElementById('flashcardContainer').style.display = 'none';
             document.getElementById('overlay').style.display = 'none';
         });
+
         document.getElementById('nextCard').addEventListener('click', function () {
             currentIndex = (currentIndex + 1) % vocabItems.length;
             showFlashcard(currentIndex);
         });
+
         loadVocab();
     });
 </script>
