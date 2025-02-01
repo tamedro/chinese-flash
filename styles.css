@@ -30,7 +30,7 @@
 body {
     font-family: 'LXGWWenKai', Arial, sans-serif;
     margin: 0;
-    padding-top: 120px; /* Adjusted for header height */
+    padding-top: 120px;
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -85,13 +85,6 @@ body {
     border-left: 5px solid #4CAF50; /* Green indicator for seen words */
 }
 
-.handwritten-img {
-    display: none;
-    width: 100px;
-    height: auto;
-    margin-top: 10px;
-}
-
 .theme-toggle {
     margin-left: auto;
     cursor: pointer;
@@ -103,9 +96,9 @@ body {
 }
 
 .flashcard-container {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
-    top: 120px; /* Position below the header */
+    top: 120px;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--background-color);
@@ -124,37 +117,37 @@ body {
 }
 
 .flashcard-content {
-    flex: 1; /* Take up available space */
+    flex: 1;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Ensure content starts near the top */
-    padding-top: 40px; /* Added padding at the top */
+    justify-content: flex-start;
+    padding-top: 40px;
 }
 
 .flashcard-content .character {
-    font-size: 8em; /* Increase size for better visibility */
+    font-size: 8em;
     font-weight: bold;
-    margin-bottom: 40px; /* Added more vertical padding */
+    margin-bottom: 40px;
     display: block;
 }
 
 .flashcard-content .pinyin {
-    margin-bottom: 40px; /* Added vertical padding */
+    margin-bottom: 40px;
 }
 
 .flashcard-controls {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 10px 20px; /* Added horizontal padding */
+    padding: 10px 20px;
     position: absolute;
-    bottom: 20px; /* Pin to the bottom */
+    bottom: 20px;
     left: 0;
 }
 
 .flashcard-controls button {
-    padding: 10px 20px; /* Larger buttons */
+    padding: 10px 20px;
     border: 1px solid var(--vocab-border);
     border-radius: 5px;
     background-color: var(--level-background);
@@ -166,11 +159,10 @@ body {
 .overlay {
     display: none;
     position: fixed;
-    top: 120px; /* Start below the header */
+    top: 120px;
     left: 0;
     width: 100%;
-    height: calc(100% - 120px); /* Adjusted to avoid overlapping */
+    height: calc(100% - 120px);
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000; /* Below header and flashcard */
+    z-index: 1000;
 }
-

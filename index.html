@@ -20,9 +20,6 @@
         <label>
             <input type="checkbox" id="showDefinitions" checked> Show Definitions
         </label>
-        <label>
-            <input type="checkbox" id="includeHandwritten"> Include Handwritten
-        </label>
         <div class="theme-toggle" id="themeToggle">🌙 Dark Mode</div>
         <button id="startFlashcards">Start Flashcards</button>
     </div>
@@ -37,7 +34,6 @@
         <span class="character"></span>
         <span class="pinyin"></span>
         <span class="definition"></span>
-        <img class="handwritten-img" src="" alt="" style="display: none;">
     </div>
     <div class="flashcard-controls">
         <button id="stopFlashcards">Stop</button>
@@ -73,17 +69,6 @@
             definitionDiv.innerHTML = `<span class="label">Definition:</span> <span class="definition">${item.definition}</span>`;
             vocabDiv.appendChild(definitionDiv);
 
-            if (item.handwritten.length > 0) {
-                const handwrittenDiv = document.createElement('div');
-                item.handwritten.forEach(url => {
-                    const img = document.createElement('img');
-                    img.classList.add('handwritten-img');
-                    img.src = url;
-                    handwrittenDiv.appendChild(img);
-                });
-                vocabDiv.appendChild(handwrittenDiv);
-            }
-
             levelDiv.appendChild(vocabDiv);
             vocabContainer.appendChild(levelDiv);
         });
@@ -105,7 +90,6 @@
         const showCharacters = document.getElementById('showCharacters').checked;
         const showPinyin = document.getElementById('showPinyin').checked;
         const showDefinitions = document.getElementById('showDefinitions').checked;
-        const includeHandwritten = document.getElementById('includeHandwritten').checked;
 
         // Update main page visibility
         document.querySelectorAll('.vocab-item .character').forEach(el => {
@@ -117,20 +101,6 @@
         document.querySelectorAll('.vocab-item .definition').forEach(el => {
             el.style.display = showDefinitions ? 'inline' : 'none';
         });
-        document.querySelectorAll('.vocab-item .handwritten-img').forEach(el => {
-            el.style.display = showCharacters && includeHandwritten ? 'inline-block' : 'none';
-        });
-
-        // Update flashcard visibility
-        const flashcardCharacter = document.querySelector('.flashcard-content .character');
-        const flashcardPinyin = document.querySelector('.flashcard-content .pinyin');
-        const flashcardDefinition = document.querySelector('.flashcard-content .definition');
-        const flashcardHandwritten = document.querySelector('.flashcard-content .handwritten-img');
-
-        if (flashcardCharacter) flashcardCharacter.style.display = showCharacters ? 'block' : 'none';
-        if (flashcardPinyin) flashcardPinyin.style.display = showPinyin ? 'block' : 'none';
-        if (flashcardDefinition) flashcardDefinition.style.display = showDefinitions ? 'block' : 'none';
-        if (flashcardHandwritten) flashcardHandwritten.style.display = showCharacters && includeHandwritten ? 'block' : 'none';
     }
 
     function showFlashcard(index) {
@@ -141,17 +111,10 @@
         document.querySelector('.flashcard-content .character').textContent = item.character;
         document.querySelector('.flashcard-content .pinyin').textContent = item.pinyin;
         document.querySelector('.flashcard-content .definition').textContent = item.definition;
-        const handwrittenImg = document.querySelector('.flashcard-content .handwritten-img');
-        if (item.handwritten.length > 0) {
-            handwrittenImg.src = item.handwritten[0];
-            handwrittenImg.style.display = 'block';
-        } else {
-            handwrittenImg.style.display = 'none';
-        }
 
         flashcardContainer.style.display = 'block';
         overlay.style.display = 'block';
-        updateVisibility(); // Apply selector settings to flashcard
+        updateVisibility();
     }
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -161,15 +124,12 @@
         const stopFlashcardsButton = document.getElementById('stopFlashcards');
         const nextCardButton = document.getElementById('nextCard');
 
-        // Ensure modal doesn't display on page load
         flashcardContainer.style.display = 'none';
         overlay.style.display = 'none';
 
-        // Add event listeners for visibility controls
         document.getElementById('showCharacters').addEventListener('change', updateVisibility);
         document.getElementById('showPinyin').addEventListener('change', updateVisibility);
         document.getElementById('showDefinitions').addEventListener('change', updateVisibility);
-        document.getElementById('includeHandwritten').addEventListener('change', updateVisibility);
 
         startFlashcardsButton.addEventListener('click', function () {
             currentIndex = 0;
@@ -192,4 +152,3 @@
 
 </body>
 </html>
-
