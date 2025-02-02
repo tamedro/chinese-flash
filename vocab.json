@@ -644,7 +644,9 @@
             "library": "hsk1",
             "character": "前面",
             "pinyin": "qián miàn",
-            "definition": "front"
+            "definition": "front",
+            "example_sentence": "我站在学校前面。",
+            "translation": "I stand in front of the school."
         },
         {
             "library": "hsk1",
@@ -690,7 +692,9 @@
             "library": "hsk1",
             "character": "日",
             "pinyin": "rì",
-            "definition": "day"
+            "definition": "day",
+            "example_sentence": "今天是星期日。",
+            "translation": "Today is Sunday."
         },
         {
             "library": "hsk1",
@@ -720,43 +724,57 @@
             "library": "hsk1",
             "character": "上午",
             "pinyin": "shàng wǔ",
-            "definition": "morning"
+            "definition": "morning",
+            "example_sentence": "我上午去学校。",
+            "translation": "I go to school in the morning."
         },
         {
             "library": "hsk1",
             "character": "少",
             "pinyin": "shǎo",
-            "definition": "few"
+            "definition": "few",
+            "example_sentence": "我有很少的钱。",
+            "translation": "I have very little money."
         },
         {
             "library": "hsk1",
             "character": "谁",
             "pinyin": "shéi",
-            "definition": "who"
+            "definition": "who",
+            "example_sentence": "他是谁？",
+            "translation": "Who is he?"
         },
         {
             "library": "hsk1",
             "character": "什么",
             "pinyin": "shén me",
-            "definition": "what"
+            "definition": "what",
+            "example_sentence": "这是什么？",
+            "translation": "What is this?"
         },
         {
             "library": "hsk1",
             "character": "十",
             "pinyin": "shí",
-            "definition": "ten"
+            "definition": "ten",
+            "example_sentence": "我有十块钱。",
+            "translation": "I have ten yuan."
         },
         {
             "library": "hsk1",
             "character": "时候",
             "pinyin": "shí hou",
-            "definition": "time"
+            "definition": "time",
+            "example_sentence": "你什么时候回家？",
+            "translation": "When will you go home?"
         },
         {
             "library": "hsk1",
             "character": "是",
             "pinyin": "shì",
-            "definition": "to be"
+            "definition": "to be",
+            "example_sentence": "我是学生。",
+            "translation": "I am a student."
         },
         {
             "library": "hsk1",
@@ -778,13 +796,17 @@
             "library": "hsk1",
             "character": "水果",
             "pinyin": "shuǐ guǒ",
-            "definition": "fruit"
+            "definition": "fruit",
+            "example_sentence": "我喜欢吃水果。",
+            "translation": "I like eating fruits."
         },
         {
             "library": "hsk1",
             "character": "睡觉",
             "pinyin": "shuì jiào",
-            "definition": "to sleep"
+            "definition": "to sleep",
+            "example_sentence": "我每天晚上十点睡觉。",
+            "translation": "I go to bed at ten every night."
         },
         {
             "library": "hsk1",
@@ -806,49 +828,65 @@
             "library": "hsk1",
             "character": "岁",
             "pinyin": "suì",
-            "definition": "years old"
+            "definition": "years old",
+            "example_sentence": "我五岁了。",
+            "translation": "I am five years old."
         },
         {
             "library": "hsk1",
             "character": "他",
             "pinyin": "tā",
-            "definition": "he"
+            "definition": "he",
+            "example_sentence": "他是我的朋友。",
+            "translation": "He is my friend."
         },
         {
             "library": "hsk1",
             "character": "她",
             "pinyin": "tā",
-            "definition": "she"
+            "definition": "she",
+            "example_sentence": "她是我的姐姐。",
+            "translation": "She is my older sister."
         },
         {
             "library": "hsk1",
             "character": "太",
             "pinyin": "tài",
-            "definition": "too"
+            "definition": "too",
+            "example_sentence": "这个房间太大了。",
+            "translation": "This room is too big."
         },
         {
             "library": "hsk1",
             "character": "天气",
             "pinyin": "tiān qì",
-            "definition": "weather"
+            "definition": "weather",
+            "example_sentence": "今天天气很好。",
+            "translation": "The weather is good today."
         },
         {
             "library": "hsk1",
             "character": "听",
             "pinyin": "tīng",
-            "definition": "to listen"
+            "definition": "to listen",
+            "example_sentence": "我喜欢听音乐。",
+            "translation": "I like listening to music."
         },
         {
             "library": "hsk1",
             "character": "同学",
             "pinyin": "tóng xué",
-            "definition": "classmate"
+            "definition": "classmate",
+            "example_sentence": "我的同学很友好。",
+            "translation": "My classmates are very friendly."
         },
         {
             "library": "hsk1",
             "character": "喂",
             "pinyin": "wèi",
-            "definition": "hello (on the phone)"
+            "definition": "hello (on the phone)",
+            "example_sentence": "喂，你好！",
+            "translation": "Hello, hey!"
         },
         {
             "library": "hsk1",
@@ -862,13 +900,17 @@
             "library": "hsk1",
             "character": "我们",
             "pinyin": "wǒ men",
-            "definition": "we"
+            "definition": "we",
+            "example_sentence": "我们是好朋友。",
+            "translation": "We are good friends."
         },
         {
             "library": "hsk1",
             "character": "五",
             "pinyin": "wǔ",
-            "definition": "five"
+            "definition": "five",
+            "example_sentence": "我有五个苹果。",
+            "translation": "I have five apples."
         },
         {
             "library": "hsk1",
@@ -882,37 +924,49 @@
             "library": "hsk1",
             "character": "下",
             "pinyin": "xià",
-            "definition": "down"
+            "definition": "down",
+            "example_sentence": "我在楼下等你。",
+            "translation": "I am waiting for you downstairs."
         },
         {
             "library": "hsk1",
             "character": "下午",
             "pinyin": "xià wǔ",
-            "definition": "afternoon"
+            "definition": "afternoon",
+            "example_sentence": "我下午去公园。",
+            "translation": "I go to the park in the afternoon."
         },
         {
             "library": "hsk1",
             "character": "下雨",
             "pinyin": "xià yǔ",
-            "definition": "to rain"
+            "definition": "to rain",
+            "example_sentence": "今天会下雨。",
+            "translation": "It will rain today."
         },
         {
             "library": "hsk1",
             "character": "先生",
             "pinyin": "xiān sheng",
-            "definition": "Mr."
+            "definition": "Mr.",
+            "example_sentence": "李先生是我的老师。",
+            "translation": "Mr. Li is my teacher."
         },
         {
             "library": "hsk1",
             "character": "现在",
             "pinyin": "xiàn zài",
-            "definition": "now"
+            "definition": "now",
+            "example_sentence": "现在是三点。",
+            "translation": "It is three o'clock now."
         },
         {
             "library": "hsk1",
             "character": "想",
             "pinyin": "xiǎng",
-            "definition": "to want"
+            "definition": "to want",
+            "example_sentence": "我想吃饭。",
+            "translation": "I want to eat."
         },
         {
             "library": "hsk1",
@@ -926,19 +980,25 @@
             "library": "hsk1",
             "character": "小姐",
             "pinyin": "xiǎo jiě",
-            "definition": "Miss"
+            "definition": "Miss",
+            "example_sentence": "王小姐很漂亮。",
+            "translation": "Miss Wang is very beautiful."
         },
         {
             "library": "hsk1",
             "character": "些",
             "pinyin": "xiē",
-            "definition": "some"
+            "definition": "some",
+            "example_sentence": "我买了一些水果。",
+            "translation": "I bought some fruit."
         },
         {
             "library": "hsk1",
             "character": "写",
             "pinyin": "xiě",
-            "definition": "to write"
+            "definition": "to write",
+            "example_sentence": "我在写作业。",
+            "translation": "I am doing my homework."
         },
         {
             "library": "hsk1",
@@ -952,13 +1012,17 @@
             "library": "hsk1",
             "character": "星期",
             "pinyin": "xīng qī",
-            "definition": "week"
+            "definition": "week",
+            "example_sentence": "今天是星期三。",
+            "translation": "Today is Wednesday."
         },
         {
             "library": "hsk1",
             "character": "学生",
             "pinyin": "xué sheng",
-            "definition": "student"
+            "definition": "student",
+            "example_sentence": "我是学生。",
+            "translation": "I am a student."
         },
         {
             "library": "hsk1",
@@ -988,7 +1052,9 @@
             "library": "hsk1",
             "character": "衣服",
             "pinyin": "yī fu",
-            "definition": "clothes"
+            "definition": "clothes",
+            "example_sentence": "我买了一件新衣服。",
+            "translation": "I bought new clothes."
         },
         {
             "library": "hsk1",
@@ -1002,13 +1068,17 @@
             "library": "hsk1",
             "character": "医院",
             "pinyin": "yī yuàn",
-            "definition": "hospital"
+            "definition": "hospital",
+            "example_sentence": "他在医院工作。",
+            "translation": "He works in a hospital."
         },
         {
             "library": "hsk1",
             "character": "椅子",
             "pinyin": "yǐ zi",
-            "definition": "chair"
+            "definition": "chair",
+            "example_sentence": "这把椅子很舒服。",
+            "translation": "This chair is very comfortable."
         },
         {
             "library": "hsk1",
@@ -1022,13 +1092,17 @@
             "library": "hsk1",
             "character": "月",
             "pinyin": "yuè",
-            "definition": "month"
+            "definition": "month",
+            "example_sentence": "这个月有三十天。",
+            "translation": "This month has thirty days."
         },
         {
             "library": "hsk1",
             "character": "在",
             "pinyin": "zài",
-            "definition": "at"
+            "definition": "at",
+            "example_sentence": "我在家。",
+            "translation": "I am at home."
         },
         {
             "library": "hsk1",
@@ -1042,7 +1116,9 @@
             "library": "hsk1",
             "character": "怎么",
             "pinyin": "zěn me",
-            "definition": "how"
+            "definition": "how",
+            "example_sentence": "你怎么了？",
+            "translation": "What’s wrong with you?"
         },
         {
             "library": "hsk1",
@@ -1064,43 +1140,57 @@
             "library": "hsk1",
             "character": "中午",
             "pinyin": "zhōng wǔ",
-            "definition": "noon"
+            "definition": "noon",
+            "example_sentence": "我中午吃午饭。",
+            "translation": "I eat lunch at noon."
         },
         {
             "library": "hsk1",
             "character": "住",
             "pinyin": "zhù",
-            "definition": "to live"
+            "definition": "to live",
+            "example_sentence": "我住在北京。",
+            "translation": "I live in Beijing."
         },
         {
             "library": "hsk1",
             "character": "桌子",
             "pinyin": "zhuō zi",
-            "definition": "table"
+            "definition": "table",
+            "example_sentence": "桌子上有一本书。",
+            "translation": "There is a book on the table."
         },
         {
             "library": "hsk1",
             "character": "字",
             "pinyin": "zì",
-            "definition": "character"
+            "definition": "character",
+            "example_sentence": "这个字怎么读？",
+            "translation": "How do you read this character?"
         },
         {
             "library": "hsk1",
             "character": "昨天",
             "pinyin": "zuó tiān",
-            "definition": "yesterday"
+            "definition": "yesterday",
+            "example_sentence": "昨天是星期二。",
+            "translation": "Yesterday was Tuesday."
         },
         {
             "library": "hsk1",
             "character": "坐",
             "pinyin": "zuò",
-            "definition": "to sit"
+            "definition": "to sit",
+            "example_sentence": "请坐。",
+            "translation": "Please sit."
         },
         {
             "library": "hsk1",
             "character": "做",
             "pinyin": "zuò",
-            "definition": "to do"
+            "definition": "to do",
+            "example_sentence": "你在做什么？",
+            "translation": "What are you doing?"
         }
     ]
 }
