@@ -95,8 +95,28 @@ body {
     color: var(--text-color);
 }
 
+/* Example sentence styles */
+.example-container {
+    display: none;
+    margin-top: 8px;
+    padding-left: 10px;
+    font-style: italic;
+    color: #888;
+}
+
+.example-container .example {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.example-container .translation {
+    display: block;
+    color: #777;
+}
+
+/* Flashcard Container */
 .flashcard-container {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 120px;
     left: 50%;
@@ -115,6 +135,7 @@ body {
     flex-direction: column;
 }
 
+/* Flashcard Content */
 .flashcard-content {
     flex: 1;
     text-align: center;
@@ -132,14 +153,35 @@ body {
 }
 
 .flashcard-content .character.system-font {
-    font-size: 6em; /* Increased size, but smaller than the custom font */
-    display: none; /* Keep it hidden by default */
+    font-size: 6em;
+    display: none;
 }
 
 .flashcard-content .pinyin {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
+.flashcard-content .definition {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/* Flashcard example sentence */
+.flashcard-content .example {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.flashcard-content .translation {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Flashcard Controls */
 .flashcard-controls {
     display: flex;
     justify-content: space-between;
@@ -160,8 +202,9 @@ body {
     font-size: 1em;
 }
 
+/* Overlay */
 .overlay {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 120px;
     left: 0;
@@ -171,8 +214,8 @@ body {
     z-index: 1000;
 }
 
-/* Update the system font size on the main page */
+/* Adjustments for vocab items */
 .vocab-item .character.system-font {
-    font-size: 1em; /* Match the size of the custom font */
-    display: none; /* Keep it hidden by default */
+    font-size: 1em;
+    display: none;
 }

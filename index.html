@@ -32,6 +32,9 @@
         <label>
             <input type="checkbox" id="showSystemFont"> Show System Font
         </label>
+        <label>
+            <input type="checkbox" id="showExamples"> Show Examples
+        </label>
         <div class="theme-toggle" id="themeToggle">🌙 Dark Mode</div>
         <button id="startFlashcards">Start Flashcards</button>
     </div>
@@ -47,6 +50,8 @@
         <span class="character system-font"></span>
         <span class="pinyin"></span>
         <span class="definition"></span>
+        <span class="example"></span>
+        <span class="translation"></span>
     </div>
     <div class="flashcard-controls">
         <button id="stopFlashcards">Stop</button>
@@ -90,6 +95,14 @@
             definitionDiv.innerHTML = `<span class="label">Definition:</span> <span class="definition">${item.definition}</span>`;
             vocabDiv.appendChild(definitionDiv);
 
+            if (item.example_sentence && item.translation) {
+                const exampleDiv = document.createElement('div');
+                exampleDiv.classList.add('example-container');
+                exampleDiv.innerHTML = `<span class="label">Example:</span> <span class="example">${item.example_sentence}</span><br>
+                                        <span class="label">Translation:</span> <span class="translation">${item.translation}</span>`;
+                vocabDiv.appendChild(exampleDiv);
+            }
+
             levelDiv.appendChild(vocabDiv);
         });
     }
@@ -111,8 +124,8 @@
         const showPinyin = document.getElementById('showPinyin').checked;
         const showDefinitions = document.getElementById('showDefinitions').checked;
         const showSystemFont = document.getElementById('showSystemFont').checked;
+        const showExamples = document.getElementById('showExamples').checked;
 
-        // Update visibility on the main page
         document.querySelectorAll('.vocab-item .character.custom-font').forEach(el => {
             el.style.display = showCharacters ? 'inline' : 'none';
         });
@@ -125,25 +138,9 @@
         document.querySelectorAll('.vocab-item .definition').forEach(el => {
             el.style.display = showDefinitions ? 'inline' : 'none';
         });
-
-        // Update visibility in the flashcard modal
-        const flashcardCharacterCustom = document.querySelector('.flashcard-content .character.custom-font');
-        const flashcardCharacterSystem = document.querySelector('.flashcard-content .character.system-font');
-        const flashcardPinyin = document.querySelector('.flashcard-content .pinyin');
-        const flashcardDefinition = document.querySelector('.flashcard-content .definition');
-
-        if (flashcardCharacterCustom) {
-            flashcardCharacterCustom.style.display = showCharacters ? 'inline' : 'none';
-        }
-        if (flashcardCharacterSystem) {
-            flashcardCharacterSystem.style.display = showSystemFont ? 'inline' : 'none';
-        }
-        if (flashcardPinyin) {
-            flashcardPinyin.style.display = showPinyin ? 'inline' : 'none';
-        }
-        if (flashcardDefinition) {
-            flashcardDefinition.style.display = showDefinitions ? 'inline' : 'none';
-        }
+        document.querySelectorAll('.vocab-item .example-container').forEach(el => {
+            el.style.display = showExamples ? 'block' : 'none';
+        });
     }
 
     function showFlashcard(index) {
@@ -155,10 +152,12 @@
         document.querySelector('.flashcard-content .character.system-font').textContent = item.character;
         document.querySelector('.flashcard-content .pinyin').textContent = item.pinyin;
         document.querySelector('.flashcard-content .definition').textContent = item.definition;
+        document.querySelector('.flashcard-content .example').textContent = item.example_sentence || '';
+        document.querySelector('.flashcard-content .translation').textContent = item.translation || '';
 
         flashcardContainer.style.display = 'block';
         overlay.style.display = 'block';
-        updateVisibility(); // Ensure visibility is updated immediately
+        updateVisibility();
     }
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -175,11 +174,9 @@
             }
         });
 
-        // Add event listeners to checkboxes to update visibility immediately
-        document.getElementById('showCharacters').addEventListener('change', updateVisibility);
-        document.getElementById('showPinyin').addEventListener('change', updateVisibility);
-        document.getElementById('showDefinitions').addEventListener('change', updateVisibility);
-        document.getElementById('showSystemFont').addEventListener('change', updateVisibility);
+        document.querySelectorAll('.controls input[type="checkbox"]').forEach(el => {
+            el.addEventListener('change', updateVisibility);
+        });
 
         document.getElementById('startFlashcards').addEventListener('click', function () {
             vocabItems = vocabItems.sort(() => Math.random() - 0.5);
