@@ -126,6 +126,7 @@
         const showSystemFont = document.getElementById('showSystemFont').checked;
         const showExamples = document.getElementById('showExamples').checked;
 
+        // Toggle visibility in the main vocab list
         document.querySelectorAll('.vocab-item .character.custom-font').forEach(el => {
             el.style.display = showCharacters ? 'inline' : 'none';
         });
@@ -141,6 +142,10 @@
         document.querySelectorAll('.vocab-item .example-container').forEach(el => {
             el.style.display = showExamples ? 'block' : 'none';
         });
+
+        // Toggle visibility in the flashcards
+        document.querySelector('.flashcard-content .example').style.display = showExamples ? 'block' : 'none';
+        document.querySelector('.flashcard-content .translation').style.display = showExamples ? 'block' : 'none';
     }
 
     function showFlashcard(index) {
