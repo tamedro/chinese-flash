@@ -144,6 +144,10 @@
         });
 
         // Toggle visibility in the flashcards
+        document.querySelector('.flashcard-content .character.custom-font').style.display = showCharacters ? 'block' : 'none';
+        document.querySelector('.flashcard-content .character.system-font').style.display = showSystemFont ? 'block' : 'none';
+        document.querySelector('.flashcard-content .pinyin').style.display = showPinyin ? 'block' : 'none';
+        document.querySelector('.flashcard-content .definition').style.display = showDefinitions ? 'block' : 'none';
         document.querySelector('.flashcard-content .example').style.display = showExamples ? 'block' : 'none';
         document.querySelector('.flashcard-content .translation').style.display = showExamples ? 'block' : 'none';
     }
